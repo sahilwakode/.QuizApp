@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="Q1.js">
+    <title>Question 1</title>
+    <style>
+        #c {
+            font-family: sans-serif;
+            flex: auto;
+            grid-area: auto;
+
+            position: fixed;
+            width: 100%;
+        }
+
+        #container {
+            background-color: rgb(195, 194, 194);
+            font-family: sans-serif;
+            display: grid;
+
+        }
+
+        #nasha {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        #nist {
+            border: 5px rgb(156, 154, 154);
+            border-style: inset;
+            border-radius: 10px;
+        }
+
+        #ques1 {
+            border: 5px rgb(221, 217, 217);
+            border-style: double;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        #ques2 {
+            border: 5px rgb(221, 217, 217);
+            border-style: double;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        #ques3 {
+            border: 5px rgb(221, 217, 217);
+            border-style: double;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        #ques4 {
+            border: 5px rgb(221, 217, 217);
+            border-style: double;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        #ques5 {
+            border: 5px rgb(221, 217, 217);
+            border-style: double;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        #sub {
+            align-items: center;
+            width: 25%;
+            float: left;
+            margin: 5px;
+            color: rgb(32, 1, 1);
+            background-color: lightblue;
+            border-radius: 10px;
+
+        }
+
+        #sub:hover {
+            width: 100%;
+            color: white;
+            background-color: rgb(53, 53, 234);
+        }
+    </style>
+</head>
+
+<body id="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="c">
+        <a class="navbar-brand" href="#" id="nab">MyQuizApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Communicate Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">About Us</a>
+                        <a class="dropdown-item" href="#">Contact Us</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Help</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <h2 id="nasha">
+        Attempt Your Paper
+    </h2>
+    <p id="nist">
+
+    </p>
+    <p id="ques">
+    <form name="quiz" onsubmit="score(event)">
+        <div id="ques1">
+            <h4>
+                1} Decibel is the unit for
+            </h4>
+            <hr>
+            <hr>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest1" value="speed of light">A. speed of light
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest1" value="radio wave frequency">B. radio wave
+                frequency
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest1" value="intensity">C. intensity of sound
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest1" value="intensity of heat">D. intensity of heat
+            </h5>
+        </div>
+        <hr>
+        <hr>
+        <div id="ques2">
+            <h4>
+                2} One fathom is equal to
+            </h4>
+            <hr>
+            <hr>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest2" value="feet">A. 6 feet
+
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest2" value="6 meters
+                      ">B. 6 meters
+
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest2" value="60 feet">C. 60 feet
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest2" value="100 cm">D. 100 cm
+            </h5>
+        </div>
+        <hr>
+        <hr>
+        <div id="ques3">
+            <h4>
+                3} A chronometer measures
+            </h4>
+            <hr>
+            <hr>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest3" value="colour contrast">
+                A. colour contrast
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest3" value="sound waves">B. sound waves
+
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest3" value="time">C. time
+
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest3" value="water waves">D. water waves
+            </h5>
+        </div>
+        <hr>
+        <hr>
+        <div id="ques4">
+            <h4>
+                4} Nautical mile is a unit of distance used in
+            </h4>
+            <hr>
+            <hr>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest4" value="navigation">A. navigation
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest4" value="road mile">B. road mile
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest4" value="astronomy
+                      ">C. astronomy
+
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest4" value="measuring the boundaries of a nation">D.
+                measuring the boundaries of a nation
+            </h5>
+        </div>
+        <hr>
+        <hr>
+        <div id="ques5">
+            <h4>
+                5} Knot is a unit of speed of which of the following?
+            </h4>
+            <hr>
+            <hr>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest5" value="
+                      	Aeroplane">
+                A. Aeroplane
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest5" value="Light waves">B. Light waves
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest5" value="Ship">C. Ship
+            </h5>
+            <h5>
+                <input type="radio" class="ques_checkbox" name="quest5" value="Sound waves">D. Sound waves
+            </h5>
+        </div>
+        <br><br>
+        <input type="submit" name="button" value="Submit" id="sub">
+    </form>
+    </p>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Q1.js"></script>
+</body>
+
+</html>
